@@ -8,6 +8,7 @@ if(time < 10){
 }
 console.log(greeting);
 
+//ternary
 time = 9;
 
 (time < 10) ? greeting = "Good morning" : 
