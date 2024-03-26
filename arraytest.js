@@ -1,7 +1,7 @@
-const removeFromArray = function (array,array1, ...args) {
-  console.log(array);
+const arrayTest = function (ar,array1, ...args) {
+  console.log(ar);
   console.log(array1)
   console.log(...args);
 
 };
-removeFromArray([1, 2, 3, 4], [3, 5], 6);
+arrayTest([1, 2, 3, 4], [3, 5], 6);
