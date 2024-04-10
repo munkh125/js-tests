@@ -78,7 +78,7 @@ let shift = cars.shift();
 console.log(cars);
 console.log(shift);
 
-//unshift() adds a new element to an array (at the beginning) unshifts older elemnts returns new array length
+//unshift() adds a new element to an array (at the beginning) unshift older elements returns new array length
 cars.unshift("Saab");
 console.log(cars);
 
@@ -125,7 +125,7 @@ let splice = numbers.splice(2, 2, "6", "7");
 //rest of parameters define the new elements to be added
 console.log(numbers);
 console.log(splice);
-let spliceRemove = numbers.splice(0, 1); //remove element usin splice
+let spliceRemove = numbers.splice(0, 1); //remove element using splice
 console.log(numbers);
 console.log(spliceRemove);
 //toSpliced() creates a new array keeping original array unchanged
@@ -143,7 +143,7 @@ console.log(slice);
 console.log(slice2);
 
 // ---------------- SEARCH ---------------------
-//indexOf() searches an array for an element value retursn its position
+//indexOf() searches an array for an element value returns its position
 let position = fruits.indexOf("Apple");
 //array.indexOf(item,start);where to start the search
 console.log(fruits.toString());
@@ -180,7 +180,7 @@ console.log(sortArray);
 console.log(sortArray.sort());
 const sorted = sortArray.toSorted();
 console.log(sorted);
-//reverse() reverse the elemets in an array
+//reverse() reverse the elements in an array
 //toReversed() safe way to reverse
 const points = [40, 100, 1, 5, 25, 10];
 console.log(points.sort());
@@ -209,11 +209,11 @@ function mapFunction(value, index, array) {
 }
 console.log(data2);
 
-//flatMap() maps all elelmts of an array then creates new array by flattening the array
+//flatMap() maps all elements of an array then creates new array by flattening the array
 const data3 = data.flatMap((x) => x * 3);
 console.log(data3);
 
-//filter() creates a new array with array elemets that pass a test
+//filter() creates a new array with array elements that pass a test
 const over18 = data.filter(filterFunction);
 
 function filterFunction(value, index, array) {
@@ -221,7 +221,7 @@ function filterFunction(value, index, array) {
 }
 console.log(over18); //[25, 36]
 
-//reduce() redice array to single value, doesn reduce original array
+//reduce() reduce array to single value, doesn't reduce original array
 //reduceRight()
 let reduce = data.reduce(reduceFunction);
 function reduceFunction(total, value, index, array) {
@@ -238,7 +238,7 @@ function everyFunction(value, index, array) {
 }
 console.log(allOver18); //false
 
-//some checkhs if some array values pass a test
+//some checks if some array values pass a test
 let someOver18 = data.some(everyFunction);
 console.log(someOver18); //true
 
