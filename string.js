@@ -40,7 +40,7 @@ console.log(text3);
 
 let trim = text.trim();
 console.log(trim);
-let trimStart = text.trimStart(); // remove whitespae only from start of a string
+let trimStart = text.trimStart(); // remove whitespace only from start of a string
 let trimEnd = text.trimEnd();
 
 let padStart = text.padStart(15, "0"); // adds 0 in start until it reaches given length
