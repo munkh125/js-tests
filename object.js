@@ -58,3 +58,54 @@ for (let code in codes) {
   console.log(codes[code]); //integer properties are sorted "+49" "1.2" won't work
 }
 //if keys are non-integer, then they are listed in the creation order
+
+let user13 = {};
+// user13.name = "John";
+
+let user12 = {
+  name: "John",
+  surname: "Smith",
+};
+
+user.name = "Pete";
+delete user.name;
+
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
+
+console.log(isEmpty(user13));
+user13.age = 13;
+console.log(isEmpty(user13));
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+};
+
+let sum = 0;
+for (let salary in salaries) {
+  sum = sum + salaries[salary];
+}
+console.log(sum);
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu",
+};
+
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == "number") {
+      obj[key] *= 2;
+    }
+  }
+}
+
+multiplyNumeric(menu);
+console.log(menu);
